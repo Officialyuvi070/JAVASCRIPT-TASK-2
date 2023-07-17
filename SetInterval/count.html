@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Countdown Timer</title>
+</head>
+<body>
+  <h1 id="timer">10</h1>
+
+  <script>
+    // Set the initial countdown value
+    let count = 10;
+
+    // Display the countdown timer
+    function displayTimer() {
+      const timerElement = document.getElementById('timer');
+      timerElement.textContent = count;
+
+      // Decrease the count by 1
+      count--;
+
+      // Check if the countdown has reached zero
+      if (count < 0) {
+        clearInterval(timerInterval);
+        timerElement.textContent = 'Time is up!';
+      }
+    }
+
+    // Call the displayTimer function every second (1000 milliseconds)
+    const timerInterval = setInterval(displayTimer, 1000);
+  </script>
+</body>
+</html>

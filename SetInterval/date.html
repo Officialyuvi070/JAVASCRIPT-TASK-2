@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>setInterval</title>
+</head>
+<body style="background-color:rebeccapurple">
+<div style="text-align: center;">
+  <h1 id="content">Initial Content</h1>
+
+  <script>
+    // Function to update the content
+    function updateContent() {
+      var element = document.getElementById("content");
+      element.innerHTML = "New Content - " + new Date();
+    }
+
+    // Update the content every second (1000 milliseconds)
+    setInterval(updateContent, 1000);
+  </script>
+</div>
+</body>
+</html>

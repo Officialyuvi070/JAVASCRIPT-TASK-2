@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+      function fun7() {
+        window.location.href="thanku.html"
+        return
+        }
+        const myTimeout = setTimeout(myquiz, 8000);
+        function myquiz() {
+
+          window.location.href="redirect.html"  
+          return
+        }
+  </script>
+</head>
+<body style="background-color:#3498DB;">
+    <h2 style="text-align: center; color:white">setTimeout and setInterval</h2>
+    <h3 style="color: white;">setTimeout</h3>
+    <p style="color:white">The setTimeout() method calls a function after a number of milliseconds.</p>
+    <p style="color:white">1 second = 1000 milliseconds.</p>
+    <h3 style="color: white;">JavaScript Quiz</h3>
+    <div>
+        <h4 style="color: white;">Q1. Which of the following methods can be used to display data in some form using Javascript?</h4>
+        <form style="color: white;">
+           <input type="radio" id="document.write()" value="document.write()">
+           <label for="document.write()">document.write()</label><br>
+           <input type="radio" id="console.log" value="console.log()">
+           <label for="document.write()">console.log()</label><br>
+           <input type="radio" id="window.alert()" value="window.alert()">
+           <label for="document.write()">window.alert()</label><br>
+           <input type="radio" id="All of the above" value="All of the above">
+           <label for="document.write()">All of the above</label><br>
+        </form>
+        <h4 style="color: white;">Q2. Which of the keyword is used to define the variable in the javascript?</h4>
+        <form style="color: white;">
+           <input type="radio" id="var" value="var">
+           <label for="var">var</label><br>
+           <input type="radio" id="let" value="let">
+           <label for="let">let</label><br>
+           <input type="radio" id="Both let and var" value="Both let and var">
+           <label for="Both let and var">Both let and var</label><br>
+           <input type="radio" id="None of the above" value="None of the above">
+           <label for="None of the above">None of the above</label><br>
+        </form>
+        <br>
+        <button onclick="fun7()">Submit Quiz</button>
+        
+        </div>
+        <h3 style="color: white;">setInterval</h3>
+        <p style="color:white">The setTimeout() is executed only once.</p>
+        <p style="color:white">If you need repeated executions, use setInterval() instead.</p>
+</body>
+
+</html>
